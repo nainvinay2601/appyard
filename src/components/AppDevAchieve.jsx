@@ -26,7 +26,7 @@ function AppDevAchieve() {
         <div className="serviceUpperContainer h-1/2 w-full flex gap-4">
           <div className="service h-full bg-[#C3ABFF] w-1/2 flex flex-col justify-between p-4">
             <div className="heading text-[32px] font-medium ">
-              Native Mobile App Development
+              Native Mobile App Dev
             </div>
             <div className="details">
               Our mobile app developers can build high-quality native apps for
@@ -36,7 +36,7 @@ function AppDevAchieve() {
           </div>
           <div className="service h-full bg-[#FBC1D4] w-1/2 flex flex-col justify-between p-4">
             <div className="heading text-[32px] font-medium ">
-              Hybrid Mobile App Development
+              Hybrid Mobile App Dev
             </div>
             <div className="details">
               Cross-platform apps that can work in different environments thanks
