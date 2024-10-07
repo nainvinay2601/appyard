@@ -35,6 +35,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import imageOne from "../assets/appmock.jpg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -122,7 +123,7 @@ function AppDev() {
         className="informationVideo w-[403px] h-full bg-slate-700 rounded-lg "
       >
         {/* You can replace this with an actual video element or a placeholder */}
-        <img src="/src/assets/appmock.jpg" alt="" className="w-full h-full object-cover"  />
+        <img src={imageOne} alt="" className="w-full h-full object-cover"  />
       </div>
     </div>
   );

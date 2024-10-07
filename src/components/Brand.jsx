@@ -36,6 +36,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import imageOne from "../assets/brand.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -123,7 +124,7 @@ function Brand() {
       >
         {/* You can replace this with an actual video element or a placeholder */}
         <img
-          src="/src/assets/brand.jpg"
+          src={imageOne}
           alt=""
           className="w-full h-full object-cover"
         />

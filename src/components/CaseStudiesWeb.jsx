@@ -1,92 +1,13 @@
-// import React from 'react'
-
-// function CaseStudies() {
-//   return (
-//     <div
-//       data-scroll
-//       data-scroll-section
-//       data-scroll-speed="-0.06"
-//       className="w-full rounded-tr-3xl rounded-tl-3xl py-40  px-10 md:px-20  bg-slate-100"
-//     >
-//       <div className="textStructur flex justify-center items-center flex-col">
-//         <div className="heading text-[64px] leading-none  font-medium ">
-//           {" "}
-//           Our Standout Creations
-//         </div>
-//         <div className="paragrap text-[20px]">
-//           Check out our standout projects, where creativity meets seamless user
-//           experience.
-//         </div>
-//       </div>
-//       <div className="caseBoxContainer h-[90vh] py-10   flex gap-10 ">
-//         <div className="caseBox  w-full  flex flex-col justify-between gap-3">
-//           <div className="visualBox h-[70vh] bg-slate-600 rounded-xl "></div>
-//           <div className="textCont">
-//             <div className="aboutProjectLiner text-[20px] font-medium ">
-//               CapCome Capital | Turning crypto complexity into simplicity
-//             </div>
-//             <div className="type text-[16px] ">
-//               Strategy - Visual - App Development
-//             </div>
-//           </div>
-//         </div>
-//         <div className="caseBox  w-full  flex flex-col justify-between gap-3">
-//           <div className="visualBox h-[70vh] bg-slate-600 rounded-xl "></div>
-//           <div className="textCont">
-//             <div className="aboutProjectLiner text-[20px] font-medium ">
-//               CapCome Capital | Turning crypto complexity into simplicity
-//             </div>
-//             <div className="type text-[16px] ">
-//               Strategy - Visual - App Development
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//       <div className="caseBoxContainer h-[90vh] py-10   flex gap-10 ">
-//         <div className="caseBox  w-full  flex flex-col justify-between gap-3">
-//           <div className="visualBox h-[70vh] bg-slate-600 rounded-xl "></div>
-//           <div className="textCont">
-//             <div className="aboutProjectLiner text-[20px] font-medium ">
-//               CapCome Capital | Turning crypto complexity into simplicity
-//             </div>
-//             <div className="type text-[16px] ">
-//               Strategy - Visual - App Development
-//             </div>
-//           </div>
-//         </div>
-//         <div className="caseBox  w-full  flex flex-col justify-between gap-3">
-//           <div className="visualBox h-[70vh] bg-slate-600 rounded-xl "></div>
-//           <div className="textCont">
-//             <div className="aboutProjectLiner text-[20px] font-medium ">
-//               CapCome Capital | Turning crypto complexity into simplicity
-//             </div>
-//             <div className="type text-[16px] ">
-//               Strategy - Visual - App Development
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//       <div className="exploreMoreButtonDiv flex justify-center">
-//         <button className="border-[1px] border-slate-900 py-3 px-6  rounded-full font-medium bg-[#93C5FD] text-[16px]">
-//           Explore More
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default CaseStudies
-
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import imageOne from "../assets/kejsy-prevyu-dlya-sajta-18.png"; 
+import imageOne from "../assets/kejsy-prevyu-dlya-sajta-18.png";
 import imageTwo from "../assets/kejsy-prevyu-dlya-sajta-4.png"; 
-import imageThree from "../assets/kejsy-prevyu-dlya-sajta.png"; 
+
 
 gsap.registerPlugin(ScrollTrigger);
 
-function CaseStudies() {
+function CaseStudiesWeb() {
   const caseStudiesRef = useRef(null);
   const headingRef = useRef(null);
   const caseBoxesRefs = useRef([]);
@@ -133,9 +54,9 @@ function CaseStudies() {
       // data-scroll
       // data-scroll-section
       // data-scroll-speed="-0.06"
-      className="w-full rounded-tr-3xl rounded-tl-3xl py-40 px-10 md:px-20 bg-slate-100"
+      className="w-full rounded-tr-3xl rounded-tl-3xl py-40 px-10 md:px-20 bg-slate-100 text-black "
     >
-      <div className="textStructur flex justify-center items-center flex-col">
+      <div className="textStructur flex justify-center items-center flex-col text-black">
         <div
           ref={headingRef}
           className="heading text-[64px] leading-none font-medium"
@@ -153,14 +74,14 @@ function CaseStudies() {
           ref={(el) => (caseBoxesRefs.current[0] = el)}
         >
           <div className="visualBox h-[70vh] bg-slate-600 rounded-xl">
-            <img src={imageOne}alt="" />
+            <img src={imageOne} alt="" />
           </div>
           <div className="textCont">
             <div className="aboutProjectLiner text-[20px] font-medium">
-              CapCome Capital | Turning crypto complexity into simplicity
+             Laundry Buddy | Laundry Management Scheduling
             </div>
             <div className="type text-[16px] ">
-              Strategy - Visual - App Development
+              Strategy - UX/UI - Fullstack Development
             </div>
           </div>
         </div>
@@ -173,21 +94,21 @@ function CaseStudies() {
           </div>
           <div className="textCont">
             <div className="aboutProjectLiner text-[20px] font-medium">
-              CapCome Capital | Turning crypto complexity into simplicity
+              Aapli | New Ways to buy motorcycle online
             </div>
             <div className="type text-[16px] ">
-              Strategy - Visual - App Development
+              Strategy - UX/UI - Fullstack Development
             </div>
           </div>
         </div>
       </div>
-      <div className="caseBoxContainer h-[90vh] py-10 flex gap-10">
+      {/* <div className="caseBoxContainer h-[90vh] py-10 flex gap-10">
         <div
           className="caseBox w-full flex flex-col justify-between gap-3"
           ref={(el) => (caseBoxesRefs.current[2] = el)}
         >
           <div className="visualBox h-[70vh] bg-slate-600 rounded-xl">
-            <img src={imageThree} alt="" />
+            <img src="/src/assets/kejsy-prevyu-dlya-sajta.png" alt="" />
           </div>
           <div className="textCont">
             <div className="aboutProjectLiner text-[20px] font-medium">
@@ -203,7 +124,7 @@ function CaseStudies() {
           ref={(el) => (caseBoxesRefs.current[3] = el)}
         >
           <div className="visualBox h-[70vh] bg-slate-600 rounded-xl">
-            <img src={imageOne} alt="" />
+            <img src="/src/assets/kejsy-prevyu-dlya-sajta-18.png" alt="" />
           </div>
           <div className="textCont">
             <div className="aboutProjectLiner text-[20px] font-medium">
@@ -214,7 +135,7 @@ function CaseStudies() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div className="exploreMoreButtonDiv flex justify-center">
         <button className="border-[1px] border-slate-900 py-3 px-6 rounded-full font-medium bg-[#93C5FD] text-[16px]">
           Explore More
@@ -224,6 +145,4 @@ function CaseStudies() {
   );
 }
 
-export default CaseStudies;
-
-
+export default CaseStudiesWeb;

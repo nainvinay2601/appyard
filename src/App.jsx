@@ -19,13 +19,18 @@ import Company from "./components/Company";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import WebDevServicePage from "./components/WebDevServicePage";
 import HowItWorks from "./components/HowItWorks";
+import AppDevServicePage from "./components/AppDevServicePage";
+import DesignServicePage from "./components/DesignServicePage";
+import CircleFollow from "./components/CircleFollow";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <Router>
+    
       <Navbar />
+      <CircleFollow/>
       <Routes>
         <Route
           path="/"
@@ -47,6 +52,8 @@ function App() {
         />
         <Route path="/services" element={<Services />} />
         <Route path="/webdev" element={<WebDevServicePage />} />
+        <Route path="/appdev" element={<AppDevServicePage />} />
+        <Route path="/design" element={<DesignServicePage />} />
       </Routes>
     </Router>
   );

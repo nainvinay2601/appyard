@@ -150,6 +150,9 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import imageOne from "../assets/agi.webp"
+import imageTwo from "../assets/ai.webp"
+import imageThree from "../assets/start.webp"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -221,7 +224,7 @@ function Blog() {
         >
           <div className="blogVisual h-[70vh] bg-slate-500 rounded-md">
             <img
-              src="/src/assets/agi.webp"
+              src={imageOne}
               alt=""
               className="w-full h-full object-cover"
             />
@@ -239,7 +242,7 @@ function Blog() {
         >
           <div className="blogVisual h-[60vh] bg-slate-500 rounded-md">
             <img
-              src="/src/assets/ai.webp"
+              src={imageTwo}
               alt=""
               className="w-full h-full object-cover"
             />
@@ -257,7 +260,7 @@ function Blog() {
         >
           <div className="blogVisual h-[50vh] bg-slate-500 rounded-md">
             <img
-              src="/src/assets/start.webp"
+              src={imageThree}
               alt=""
               className="w-full h-full object-cover"
             />

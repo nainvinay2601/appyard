@@ -72,6 +72,7 @@
 import React from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 
 function Category() {
   // GSAP animations for the baseDeets and servicesContainer
@@ -120,14 +121,19 @@ function Category() {
       >
         <div className="serviceUpperContainer h-1/2 w-full flex gap-4">
           <div className="service h-full bg-[#C3ABFF] w-1/2 flex flex-col justify-between p-4">
+           <Link
+              to="/appdev"
+              className="w-full h-full flex flex-col justify-between"
+            >
             <div className="heading text-[32px] font-medium ">
-              Brand Strategy
+              App Development
             </div>
             <div className="details">
               Visual identity is the unique visual language of your brand,
               creating memorable impressions and emotional connections with your
               audience.
             </div>
+            </Link>
           </div>
           <div className="service h-full bg-[#fcf8ec] w-1/2 flex flex-col justify-between p-4">
             <div className="heading text-[32px] font-medium ">
@@ -142,24 +148,46 @@ function Category() {
         </div>
         <div className="serviceLowerContainer h-1/2 w-full flex gap-4">
           <div className="service h-full bg-[#FED35B] w-1/2 flex flex-col justify-between p-4">
-            <div className="heading text-[32px] font-medium ">
-              Brand Strategy
-            </div>
-            <div className="details">
-              Visual identity is the unique visual language of your brand,
-              creating memorable impressions and emotional connections with your
-              audience.
-            </div>
+            <Link
+              to="/webdev"
+              className="w-full h-full flex flex-col justify-between"
+            >
+              <div className="heading text-[32px] font-medium ">
+                Web Development
+              </div>
+              <div className="details">
+                Visual identity is the unique visual language of your brand,
+                creating memorable impressions and emotional connections with
+                your audience.
+              </div>
+            </Link>
           </div>
+          {/* <div className="service h-full bg-[#1e1e1e] text-white w-1/2 flex flex-col justify-between p-4">
+            <Link to="/design" >
+              <div className="heading text-[32px] font-medium ">
+                UX/UI Design
+              </div>
+              <div className="details">
+                Visual identity is the unique visual language of your brand,
+                creating memorable impressions and emotional connections with
+                your audience.
+              </div>
+            </Link>
+          </div> */}
           <div className="service h-full bg-[#1e1e1e] text-white w-1/2 flex flex-col justify-between p-4">
-            <div className="heading text-[32px] font-medium ">
-              Brand Strategy
-            </div>
-            <div className="details">
-              Visual identity is the unique visual language of your brand,
-              creating memorable impressions and emotional connections with your
-              audience.
-            </div>
+            <Link
+              to="/design"
+              className="w-full h-full flex flex-col justify-between"
+            >
+              <div className="heading text-[32px] font-medium">
+                UX/UI Design
+              </div>
+              <div className="details">
+                Visual identity is the unique visual language of your brand,
+                creating memorable impressions and emotional connections with
+                your audience.
+              </div>
+            </Link>
           </div>
         </div>
       </div>
