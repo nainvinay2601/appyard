@@ -102,25 +102,27 @@ function AppDev() {
         </div>
         <div ref={deetsRef} className="deets flex justify-between">
           <div className="deetsParagraph text-[18px] w-1/2">
-            It's the core of your company's identity. It guides all business
-            decisions, ensuring a consistent and impactful presence in the
-            market.
+            Appyard's app development embodies our identity, delivering
+            innovative and user-focused solutions that ensure impactful market
+            presence.
           </div>
           <ul className="deetsPoints text-sm">
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
+            <li>UX Design</li>
+            <li>User Testing</li>
+            <li>Product Prototype</li>
+            <li>Mobile UI</li>
+            <li>Software UI Design</li>
+            <li>Web app Design</li>
+            <li>Interaction Design</li>
           </ul>
         </div>
       </div>
       <div
         ref={videoRef}
-        className="informationVideo w-[403px] h-full bg-slate-700"
+        className="informationVideo w-[403px] h-full bg-slate-700 rounded-lg "
       >
         {/* You can replace this with an actual video element or a placeholder */}
+        <img src="/src/assets/appmock.jpg" alt="" className="w-full h-full object-cover"  />
       </div>
     </div>
   );

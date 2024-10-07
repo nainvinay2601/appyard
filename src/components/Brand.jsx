@@ -108,20 +108,25 @@ function Brand() {
             market.
           </div>
           <ul className="deetsPoints text-sm">
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
+            <li>Research & Insights</li>
+            <li>Unique Ways</li>
+            <li>Purpose,Vision,Mission</li>
+            <li>Value Proposition</li>
+            <li>Personality Traits</li>
+            <li>Naming</li>
           </ul>
         </div>
       </div>
       <div
         ref={videoRef}
-        className="informationVideo w-[403px] h-full bg-slate-700"
+        className="informationVideo w-[403px] h-full bg-slate-700 rounded-lg  "
       >
         {/* You can replace this with an actual video element or a placeholder */}
+        <img
+          src="/src/assets/brand.jpg"
+          alt=""
+          className="w-full h-full object-cover"
+        />
       </div>
     </div>
   );

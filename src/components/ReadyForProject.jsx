@@ -60,7 +60,7 @@ function ReadyForProject() {
           </a>
           <a href="mailto:vinaynain2601@gmail.com?subject=Contact%20from%20Portfolio">
             <div className="buttonAndArrow md:px-6  px-4 py-3 font-neue-montreal md:text-sm text-xs uppercase border border-solid border-zinc-950  rounded-full flex gap-5 justify-center items-center font-semibold ">
-              <div className="">Contact Us</div>
+              <div className="">+918981262022</div>
               <div className="circle w-2 h-2 bg-white rounded-full "></div>
             </div>
           </a>

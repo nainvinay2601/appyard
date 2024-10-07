@@ -96,21 +96,22 @@ function WebDev() {
           ref={headingRef}
           className="heading text-[64px] font-medium leading-none"
         >
-          Visual Identity
+          Web Development
         </div>
         <div ref={deetsRef} className="deets flex justify-between">
           <div className="deetsParagraph text-[18px] w-1/2">
-            It's the core of your company's identity. It guides all business
-            decisions, ensuring a consistent and impactful presence in the
-            market.
+            Our website design services blend innovation and creativity to
+            deliver user-centric solutions that elevate your brand and engage
+            your audience.
           </div>
           <ul className="deetsPoints text-sm">
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
+            <li>UX Design</li>
+            <li>User Testing</li>
+            <li>Product Prototype</li>
+            <li>Mobile UI</li>
+            <li>Software UI Design</li>
+            <li>Web app Design</li>
+            <li>Interaction Design</li>
           </ul>
         </div>
       </div>
@@ -119,6 +120,11 @@ function WebDev() {
         className="informationVideo w-[403px] h-full bg-slate-700"
       >
         {/* You can replace this with an actual video element or a placeholder */}
+        <img
+          src="/src/assets/webdev.jpg"
+          alt=""
+          className="w-full h-full object-cover"
+        />
       </div>
     </div>
   );

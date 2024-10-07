@@ -17,6 +17,8 @@ import Services from "./components/Services";
 import Company from "./components/Company";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import WebDevServicePage from "./components/WebDevServicePage";
+import HowItWorks from "./components/HowItWorks";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -33,7 +35,7 @@ function App() {
               <Roi />
               <Snapshot />
               <WhatWeDo />
-             
+              <HowItWorks/>
               <CaseStudies />
               <Blog />
               <Company />
@@ -44,6 +46,7 @@ function App() {
           }
         />
         <Route path="/services" element={<Services />} />
+        <Route path="/webdev" element={<WebDevServicePage />} />
       </Routes>
     </Router>
   );

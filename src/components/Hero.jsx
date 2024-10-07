@@ -269,7 +269,7 @@ function Hero() {
 
         <div ref={buttonRef} className="buttonStructure flex gap-10 mt-10">
           <div className="buttonAndArrow bg-blue-300 text-slate-900 md:px-6 px-4 py-3 font-neue-montreal md:text-sm text-xs uppercase border border-solid border-zinc-950 rounded-full flex gap-5 justify-center items-center font-bold">
-            <div className="">Get Started</div>
+            <div className="">+918981262022</div>
           </div>
           <div className="freeConsultation text-sm px-[16px] py-[12px] rounded-full font-regular border-b-[1px] ">
             Request Free Consultation

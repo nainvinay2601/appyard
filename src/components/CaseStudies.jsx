@@ -126,10 +126,10 @@ function CaseStudies() {
 
   return (
     <div
-      ref={caseStudiesRef}
-      data-scroll
-      data-scroll-section
-      data-scroll-speed="-0.06"
+      // ref={caseStudiesRef}
+      // data-scroll
+      // data-scroll-section
+      // data-scroll-speed="-0.06"
       className="w-full rounded-tr-3xl rounded-tl-3xl py-40 px-10 md:px-20 bg-slate-100"
     >
       <div className="textStructur flex justify-center items-center flex-col">
@@ -149,7 +149,9 @@ function CaseStudies() {
           className="caseBox w-full flex flex-col justify-between gap-3"
           ref={(el) => (caseBoxesRefs.current[0] = el)}
         >
-          <div className="visualBox h-[70vh] bg-slate-600 rounded-xl"></div>
+          <div className="visualBox h-[70vh] bg-slate-600 rounded-xl">
+            <img src="/src/assets/kejsy-prevyu-dlya-sajta-18.png" alt="" />
+          </div>
           <div className="textCont">
             <div className="aboutProjectLiner text-[20px] font-medium">
               CapCome Capital | Turning crypto complexity into simplicity
@@ -163,7 +165,9 @@ function CaseStudies() {
           className="caseBox w-full flex flex-col justify-between gap-3"
           ref={(el) => (caseBoxesRefs.current[1] = el)}
         >
-          <div className="visualBox h-[70vh] bg-slate-600 rounded-xl"></div>
+          <div className="visualBox h-[70vh] bg-slate-600 rounded-xl">
+            <img src="/src/assets/kejsy-prevyu-dlya-sajta-4.png" alt="" />
+          </div>
           <div className="textCont">
             <div className="aboutProjectLiner text-[20px] font-medium">
               CapCome Capital | Turning crypto complexity into simplicity
@@ -179,7 +183,9 @@ function CaseStudies() {
           className="caseBox w-full flex flex-col justify-between gap-3"
           ref={(el) => (caseBoxesRefs.current[2] = el)}
         >
-          <div className="visualBox h-[70vh] bg-slate-600 rounded-xl"></div>
+          <div className="visualBox h-[70vh] bg-slate-600 rounded-xl">
+            <img src="/src/assets/kejsy-prevyu-dlya-sajta.png" alt="" />
+          </div>
           <div className="textCont">
             <div className="aboutProjectLiner text-[20px] font-medium">
               CapCome Capital | Turning crypto complexity into simplicity
@@ -193,7 +199,9 @@ function CaseStudies() {
           className="caseBox w-full flex flex-col justify-between gap-3"
           ref={(el) => (caseBoxesRefs.current[3] = el)}
         >
-          <div className="visualBox h-[70vh] bg-slate-600 rounded-xl"></div>
+          <div className="visualBox h-[70vh] bg-slate-600 rounded-xl">
+            <img src="/src/assets/kejsy-prevyu-dlya-sajta-18.png" alt="" />
+          </div>
           <div className="textCont">
             <div className="aboutProjectLiner text-[20px] font-medium">
               CapCome Capital | Turning crypto complexity into simplicity
@@ -204,11 +212,11 @@ function CaseStudies() {
           </div>
         </div>
       </div>
-      <div className="exploreMoreButtonDiv flex justify-center">
+      {/* <div className="exploreMoreButtonDiv flex justify-center">
         <button className="border-[1px] border-slate-900 py-3 px-6 rounded-full font-medium bg-[#93C5FD] text-[16px]">
           Explore More
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
